@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Squiggle 3d illustration</title>
+    <link rel="icon" href="logo-21.png">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    @font-face {
+        font-family: drop;
+        src: url(Agrandir-GrandHeavy.otf);
+    }
+    @font-face {
+        font-family: drop1;
+        src: url(Agrandir-GrandLight.otf);
+    }
+    @font-face {
+        font-family: drop2;
+        src: url(Agrandir-Regular.otf);
+    }
+    body{
+        overflow-x:hidden;
+        background-color: #141313;
+        color: white;
+    }
+    #bbg{
+        background: linear-gradient(#d9acee,rgb(223, 213, 219));
+        color: #000000;
+    }
+    .txt1{
+        font-family: drop2;
+    }
+    #p1{
+        font-family: drop;
+        width: 100%;
+        height:100vh;
+        background-image: url(bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #header{
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        justify-content: center; 
+        }
+        #header img{
+            margin-left: 1px;
+            margin-top: 7px;
+        }
+        #he1{
+            display: flex;
+        }
+        #hf{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            width: 260px;
+        }
+        #hf span{
+            font-family: drop2;
+        }
+        #hm{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin-left: 180px;
+            margin-right: 180px;
+            width: 600px;
+            margin-top: 20px;
+        }
+      
+        #hl{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            width: 200px;
+        }
+        #p1center{
+            margin-top: 200px;
+        }
+        #ff{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            text-align: center;
+            height: 200px;
+            width: 95%;
+            margin-left: 55px;
+            font-size: 70px;
+            line-height: 1.3em;
+        }
+        #ff span{
+            font-family: drop1;
+        }
+        #fm{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            text-align: center;
+            height: 100px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        #fl{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            text-align: center;
+            height: 40px;
+            font-size: 16px;
+        }
+        button{
+            font-family:drop;
+            padding-left:70px;
+            padding-right: 70px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 30px;
+            background-color: #ffffff66;
+            border:1px solid rgba(255, 255, 255, .6);
+        }
+        #p2{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        #p2_t{
+            margin-top: 250px;
+            width: 600px;
+            height: 200px;
+            font-size: 41px;
+        }
+        #p2_t h1{
+            font-family: drop;
+            line-height: 1em;
+        }
+        #p2_t span{
+            font-family:drop1;
+        }
+        #rep {
+            display: flex;
+            height: 250px;
+            width: 1750px; 
+        }
+        #asd{
+            display: flex;
+            flex-direction: row;
+            animation: slide 90s linear infinite;
+        }          
+        #p2_{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #p2_con{ display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            width: 430px;
+            font-family:sans-serif;
+        }
+        #aa{
+            margin-top: 150px;
+            width: 100%;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #aa_con{
+            height: 500px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        #aa_con img{
+            height: 500px;
+            width: 500px;
+            margin-left: 60px;
+            margin-right: 10px;
+            border-radius: 20px;
+        }
+        #aa_con h1{
+            font-size: 80px;
+            line-height: 1em;
+        }
+        #aa_con span{
+            margin-left: 50px;
+            font-size: 20px;
+            line-height: .1em;
+        }
+        #aa_row{
+            width: 500px;
+            margin-left:10px;
+            font-size: 23px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #aa_row h1{
+            font-family: drop;
+        }
+        #aa_row p{
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+        #b_t{
+            height: 700px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #b_t1{
+            width: 90%;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #b_t1 h1{
+            font-size: 70px;
+            font-family: drop;
+            line-height: 1em;
+        }
+        #b_t1 span{
+            font-family: drop1;
+        }
+        #c1{
+            display: flex;
+        }
+        #c1 img{
+            height: 450px;
+            width: 800px;
+            border-radius: 20px;
+            margin-left: 40px;
+        }
+        #c2{
+            margin-top: 30px;
+            display: flex;
+            justify-content: right;
+        }
+        #c2 img{
+            height: 450px;
+            width: 800px;
+            border-radius: 20px;
+            margin-right: 40px;
+        }
+        #im_box{
+            width: 100%;
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #im_box1{
+            width: 90%;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000000;
+            border-radius:20px;
+        }
+        #im_box1 img{
+            height: 450px;
+            width: 230px;  
+            border-radius: 20px;
+        }
+        #c_4{
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+        #b1_t{
+            width: 100%;
+            height: 70px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #b1_t1{
+            height: 70px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #b1_t1 h1{
+            font-family: drop;
+            font-size: 70px;
+        }
+        #bb1{
+            width: 100%;
+            height: 70px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: #000000; */
+        }
+        #bb2{
+            font-family: drop2;
+            width: 550px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius:50px;
+            background-color: #ffffff66;
+            border:1px solid rgba(255, 255, 255, .6);
+        }
+        #img20{
+            margin-top: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #im20{
+            width: 95%;
+        }
+        #im20 img{
+            height: 350px;
+            width: 350px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border-radius: 20px;
+        }
+        #b1_2{
+            width: 100%;
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+        #b1_2 img{
+            height: 70px;
+            width: 110px;
+        }
+        #b_1{
+            border:1px solid rgba(255, 255, 255, .6);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 490px;
+            width: 400px;
+            margin-right: 15px;
+        }
+        #b_11{
+            margin-top: 20px;
+        }
+        #b_12{
+            display: flex;
+            align-items: center;
+            flex-direction: column; 
+            width: 250px;
+        }
+        #b_13{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column; 
+            margin-top: 10px;
+            height: 150px;
+        }
+        #b_1 h2{
+            font-family: drop;
+            margin-top: 10px;
+            font-size: 40px;
+        }
+        #b_1 h4{
+            margin-top: 10px;
+            font-size: 20px;
+            font-family: drop2;
+        }
+        #b_2{
+            border:1px solid rgba(255, 255, 255, .6);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 490px;
+            width: 400px;
+        }
+        #b_21{
+            margin-top: 20px;
+        }
+        #b_22{
+            display: flex;
+            align-items: center;
+            flex-direction: column; 
+            width: 250px;
+        }
+        #b_23{
+            display: flex;
+            margin-top: 10px;
+            text-align: center;
+            height: 150px;
+        }
+        #b_2 h2{
+            font-family: drop;
+            margin-top: 10px;
+            font-size: 40px;
+        }
+        #b_2 h4{
+            margin-top: 10px;
+            font-size: 20px;
+            font-family: drop2;
+        }
+        #b_1 button,#b_2 button{
+            background-color: #abff32;
+        }
+        #l_pa{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #l_par{
+            display: flex;
+            width: 655px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        #l_par p{
+            font-family: drop2;
+        }
+        #l_box{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            height: 500px;
+        }
+        #l1_box{
+            margin-left: 100px;
+            width: 450px;
+            height: 300px;
+        }
+        #l1_1{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        #l1_1 img{
+            height:30px;
+            width:30px;
+        }
+        #l1_1 h3{
+            font-size: 25px;
+            font-family: drop;
+        }
+        #l1_2{
+            margin-top:240px;
+        }
+        #l2_box{
+            width: 200px;
+            height: 300px;
+            line-height: 2.6em;
+        }
+        #l3_box{
+            width: 200px;
+            height: 300px;
+            line-height: 2.6em;
+        }
+        #l4_box{
+            line-height: 2.6em;
+            width: 200px;
+            height: 300px;
+        }
+        #l4_1 img{
+            margin-top: 30px;
+        }
+        #l2_box p,#l3_box p,#l4_box p{
+            font-family: drop2;
+        }
+        #l1_box p{
+            font-family: drop2;
+            font-size: 12px;
+        }
+        .one{
+            color: rgb(245, 235, 223);
+        }
+        @keyframes slide {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%); /* Adjust the value based on the number of images */
+            } 
+        }
+</style>
+<body>
+<div id="full">
+<div id="bbg">
+    <div id="p1">
+        <div id="he1">
+            <div id="header">
+                <div id="hf"><h3>SQUIGGLE <span class="txt1"> by</span></h3></div>
+                <div><img src="logo-2.svg" alt=""></div>
+                <div class="txt1" id="hm"><h3>Vivid collection of 140 spline shapes</h3></div>
+                <div id="hl"><h3>PREVIEW</h3></div>
+            </div>
+        </div>
+        <div id="fbody">
+            <div id="p1center">
+                <div id="ff"><h3><span> FREE </span> SQUIGGLE 3D ILLUSTRATIONS</h3></div>
+                <div id="fm"><button>DOWNLOAD</button></div>
+                <div class="txt1" id="fl">Figma and PNG</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="p2">
+    <div id="p2_t">
+        <h1><span>7 </span> VIBRANT COLORS</h1>
+    </div>
+</div>
+<div id="rep">
+    <div id="asd">
+        <img src="s1.png" alt="">
+        <img src="s2.png" alt="">
+        <img src="s3.png" alt="">
+    </div>
+</div>
+<div id="p2_">
+    <div id="p2_con">
+        <img src="ic-star.svg" alt="">
+        <br>
+        <p>Designing dark UI or Light UI? You will always have a right color to choose from! Stand out from the crowd and evoke the right emotions by selecting the ideal hue for your designs.</p>
+    </div>
+</div>
+<div id="aa">
+    <div id="aa_con">
+        <div id="aa_row">
+            <h1 style="font-family: drop1;">20</h1>
+            <h1>UNIQUE SHAPES </h1>
+            <br>
+            <p> zig-zag, torus, random, etc. Add a touch of charm and excitement to your projects with a diverse range of 20 unique squiggels.</p>
+        </div>
+        <img src="star.png" alt="">
+    </div>
+</div>
+<div id="b_t">
+    <div id="b_t1">
+        <h1>WHETHER YOU'RE AIMING FOR A PLAYFUL, MODERN OR BRUTAL LOOK, OUR <span>SQUIGGLE 3D COLLECTION</span> HAVE GOT YOU COVERED.</h1>
+    </div>
+</div>
+<div id="c1">
+    <img src="c1.png" alt="">
+</div>
+<div id="c2">
+    <img src="c2.png" alt="">
+</div>
+<div id="im_box">
+    <div id="im_box1">
+        <img src="c3.png" alt="">
+        <img id="c_4" src="c4.png" alt="">
+        <img src="c5.png" alt0="">
+    </div>
+</div>
+<div id="b1_t">
+    <div id="b1_t1">
+        <h1>PREVIEW</h1>
+    </div>
+</div>
+<div id="bb1">
+    <div id="bb2">
+        <p>MAGENTA | GLOSSY | NEON | METALLIC | VIVID | PASTEL | BLACK</p>
+    </div>
+</div>
+<div id="img20">
+    <div id="im20">
+        <img src="a1.png" alt="">
+        <img src="a2.png" alt="">
+        <img src="a3.png" alt="">
+        <img src="a4.png" alt="">
+        <img src="a5.png" alt="">
+        <img src="a6.png" alt="">
+        <img src="a7.png" alt="">
+        <img src="a8.png" alt="">
+        <img src="a9.png" alt="">
+        <img src="a10.png" alt="">
+        <img src="a11.png" alt="">
+        <img src="a12.png" alt="">
+        <img src="a13.png" alt="">
+        <img src="a14.png" alt="">
+        <img src="a15.png" alt="">
+        <img src="a16.png" alt="">
+        <img src="a17.png" alt="">
+        <img src="a18.png" alt="">
+        <img src="a19.png" alt="">
+        <img src="a20.png" alt="">
+    </div>
+</div>
+<div id="b1_2">
+    <div id="b_1">
+        <div id="b_11">
+            <img src="m1.png" alt="">
+        </div>
+        <div id="b_12">
+            <center><h2>SQUIGGLE 3D PACK</h2></center>
+        </div>
+        <div id="b_13">
+            <h4 class="one">20 Unique Shapes<br>7 Vivid Colors<br>Figma and PNG Files <br>3200x3200px Resolution</h4>
+        </div>
+        <button>FREE DOWNLOAD</button>
+    </div>
+    <div id="b_2">
+        <div id="b_21">
+            <img src="m2.png" alt="">
+        </div>
+        <div id="b_22">
+            <center><h2>PRO ACCESS</h2></center>
+        </div>
+        <div id="b_23">
+            <h4 class="one">Huge library of 3d illustrations. <br> 1200+ assets and regular <br> releases. Save your time and <br> design faster.</h4>
+        </div>
+        <button>TRY ULTIMATE</button>
+    </div>
+</div>
+<div id="l_pa">
+    <div id="l_par">
+        <p class="one">If you want to support us, please, give a link to this page or our 3d store wannathis.one ✽ You can not redistribute it, resell it, sub-license or offer our files to any third party ✽</p>
+    </div>
+</div>
+<div id="l_box">
+    <div id="l1_box">
+        <div id="l1_1">
+            <h3>MADE BY</h3>
+            <img src="logo-2.svg" alt="">
+        </div>
+        <div id="l1_2">
+            <p>© 2024 All Rights Reserved</p>
+        </div>
+    </div>
+    <div id="l2_box">
+        <div id="l2_1">
+            <p>Products <br>
+                Characters <br>
+                Abstract <br>
+                Themes <br>
+                Mockups <br>
+                Freebies <br>
+                <img src="ic1.svg" alt="">
+                Pro Access
+            </p>
+        </div>
+    </div>
+    <div id="l3_box">
+        <div id="l3_1">
+            <p>Info <br>
+                License <br>
+                Use cases <br>
+                Order custom <br>
+                Privacy Policy <br>
+                Terms of Use <br>
+                help@wannathis.one
+            </p>
+        </div>
+    </div>
+    <div id="l4_box">
+        <div id="l4_1">
+            <p>
+                Follow us <br>
+                <img src="ic2.svg" alt="">
+                <img src="ic3.svg" alt="">
+                <img src="ic4.svg" alt="">
+                <img src="ic5.svg" alt="">
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
